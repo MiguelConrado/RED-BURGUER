@@ -1,4 +1,4 @@
-var itens = document.getElementsByClassName('hamb-info')
+var itens = document.getElementsByClassName('hamb-box')
 
 
 let total = document.getElementById('total')
