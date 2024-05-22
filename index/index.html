@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="stylesheet" href="style.css">
     <title>Red Burguer</title>
 </head>
-<body>
+<body id="corpo" onresize="mudouTamanho()">
+
     <header>
         <div>
             <h1>Red Burguer</h1>
@@ -17,78 +20,98 @@
         </nav>
     </header>
     
-    <main>       
-            <h2>Hamburguers</h2>   
+<main>       
+    <h2>Hamburguers</h2>  
 
-           <div id="container-opcoes">
-               
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>Chesse buguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>Chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>Chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div class="div-opcoes">
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-               <div class="div-opcoes">
-                   <img src="../imagens/hamb-1.png" alt="">
-                       <div class="container-detalhes">
-                           <h3>chesse burguer</h3>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt nam odio exercitationem</p>
-                           <img src="../imagens/" alt="">
-                       </div>
-               </div>
-           </div>
+      <div class="menu-hamb" id="imenu-hamb">
+         <span class="material-symbols-outlined" id="icon-hamb">
+            menu
+         </span>
+      </div>
 
-    </main>
+        <section class="container-opcoes" id="section-menu">
+                  <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>Chesse buguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. eqeqdkajsgdaufduahdba</p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>Chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.eqeqdkajsgdaufduahdba</p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+
+
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>Chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.eqeqdkajsgdaufduahdba</p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+
+
+                   <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">                     
+                        <div class="hamb-info">
+                          <h3>chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.eqeqdkajsgdaufduahdba </p>
+                          <p class="preco">R$ 29,00</p>
+                      </div>
+                   </div>
+
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.eqeqdkajsgdaufduahdba </p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. eqeqdkajsgdaufduahdba</p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.eqeqdkajsgdaufduahdba </p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>  
+
+
+
+                    <div class="hamb-box">
+                     <img src="../imagens/hamb-1.png" alt="">
+                       <div class="hamb-info">
+                          <h3>chesse burguer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elitdkajsgdaufduahdba.</p>
+                          <p class="preco">R$ 29,00</p>
+                       </div>
+                    </div>
+        </section>
+</main>
+    
+    
     <footer>
         <div class="footer-carrinho">
             <img src="../imagens/carrinho.png" alt="" id="carrinho">
