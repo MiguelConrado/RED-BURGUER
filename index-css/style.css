@@ -38,7 +38,7 @@ nav{
         display: flex;
         text-decoration: none;
         margin: 0px auto 10px auto;
-        width: 350px;
+        width: 300px;
     }
     & address{
         display: flex;
