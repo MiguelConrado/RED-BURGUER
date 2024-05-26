@@ -51,16 +51,6 @@ fechar.addEventListener('click', iconFechar)
 
 // --------------------------------
 
-
-
-// FIGURINHAS
-var figuras = document.getElementById('figuras')
-function icones(){
-    figuras.innerText= 'home_pin'
-}
-figuras.addEventListener('mouseenter', icones)
-
-
 // compras
 var itens = document.getElementsByClassName('hamb-box')
 let total = document.getElementById('total')
