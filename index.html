@@ -10,7 +10,7 @@
 </head>
 <body id="corpo" onresize="mudouTamanho()">
 
-    <header>
+    <header id="header">
         <div>
             <h1>Red Burguer</h1>
         </div>
@@ -23,33 +23,35 @@
                </address>
             </a>
 
-            <div class="horas" id="ihoras">
-               <a href="" id="link-aberto">Aberto para Pedidos</a>
-            </div>
+               <div class="horas" id="ihoras">
+                  <p id="link-aberto">Aberto para Pedidos</p>
+               </div>
         </nav>
 
-        <section class="horarios" id="ihorarios">
-         <h2>Horários de funcionamento</h2>
-            <ul>
-               <li>SEG <p>19:00 às 23:00</p></li>
-               <li>TER <p>19:00 às 23:00</p></li>
-               <li>QUA <p>19:00 às 23:00</p></li>
-               <li>QUI <p>19:00 às 23:00</p></li>
-               <li>SEX <p>19:00 às 23:00</p></li>
-            </ul>    
-      </section>
+        <section class="bg-horarios" id="ibg-horarios">
+            <div class="horarios" id="ihorarios">
+               <span class="material-symbols-outlined" id="close-hora">close_small <p>FECHAR</p></span>
+                  <h2>Horários de funcionamento</h2>
+                     <ul>
+                        <li>SEG <p>19:00 às 23:00</p></li>
+                        <li>TER <p>19:00 às 23:00</p></li>
+                        <li>QUA <p>19:00 às 23:00</p></li>
+                        <li>QUI <p>19:00 às 23:00</p></li>
+                        <li>SEX <p>19:00 às 23:00</p></li>
+                     </ul>
+            </div>   
+         </section>
 
     </header>
     
-<main>       
+<main id="main">       
     <h2>Hamburguers</h2>  
 
-      <div class="menu-hamb" id="imenu-hamb">
-         <span class="material-symbols-outlined" id="icon-hamb">
-            menu
-         </span>
-      </div>
-
+         <div class="menu-hamb" id="imenu-hamb">
+            <span class="material-symbols-outlined" id="icon-hamb">
+               menu
+            </span>
+         </div>
         <section class="container-opcoes" id="section-menu">
                   <div class="hamb-box">
                      <img src="imagens/hamb-1.png" alt="">

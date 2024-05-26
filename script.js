@@ -13,27 +13,55 @@ if ((dias == 2) || (hours < 19 || hours > 23)) {
 }
 
 
-var horarios = document.getElementById('ihorarios')
+// ----------------------------
 
-function abrirHorario(){
-    if(horarios.style.display = 'none'){
+ //HORARIOS DIV
+ var corpo = document.getElementById('corpo')
+ var horarios = document.getElementById('ibg-horarios')
+ function abrirHorario(){
+     if(horarios.style.display === 'block' && corpo.style.overflowY === 'hidden'){
+        horarios.style.display = 'none'
+        corpo.style.overflowY = 'visible'
+     }else{
         horarios.style.display = 'block'
-    }else{
+        corpo.style.overflowY = 'hidden'
+     }
+ }
+horas.addEventListener('click', abrirHorario)
+
+// fechar pelo BG
+function fecharHorario(){
+        horarios.style.display = 'none'
+        corpo.style.overflowY = 'visible'
+     
+     
+}
+horarios.addEventListener('click', fecharHorario)
+
+// ICON DE FECHAR
+var fechar = document.getElementById('close-hora')
+function iconFechar(){
+    if(horarios.style.display === 'block'){
         horarios.style.display = 'none'
     }
 }
-horas.addEventListener('click', abrirHorario)
+fechar.addEventListener('click', iconFechar)
 
 
+
+// --------------------------------
+
+
+
+// FIGURINHAS
 var figuras = document.getElementById('figuras')
-
 function icones(){
     figuras.innerText= 'home_pin'
 }
-
 figuras.addEventListener('mouseenter', icones)
 
 
+// compras
 var itens = document.getElementsByClassName('hamb-box')
 let total = document.getElementById('total')
 let num = []
@@ -47,11 +75,10 @@ itens[i].addEventListener('click', function(){
 });
 }
 
-
+//MENU CELULAR
 var menu = document.getElementById('imenu-hamb')
 var icon = document.getElementById('icon-hamb')
 var section = document.getElementById('section-menu')
-var corpo = document.getElementById('corpo')
 
 function abrirMenu(){
     if(section.style.display == 'block'){
