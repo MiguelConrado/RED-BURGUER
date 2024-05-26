@@ -23,8 +23,7 @@ header{
     background-position: center center;
     background-size: cover;
     padding: 45px;
-    box-shadow: 3px 3px 7px black;
-    overflow-y: hidden;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.425);
 
     & h1{
         font-size: 45px;
@@ -36,12 +35,13 @@ header{
 
 nav{
     & a{
+        display: flex;
         text-decoration: none;
+        margin: 0px auto 10px auto;
+        width: 350px;
     }
     & address{
         display: flex;
-        margin: 0px auto 10px auto;
-        width: 350px;
         color: white;
     }
 }
@@ -78,7 +78,7 @@ nav{
 }
 .horarios{
     margin: auto;
-    width: 350px;
+    width: 300px;
     padding: 25px;
     position: absolute;
     left: 50%;
