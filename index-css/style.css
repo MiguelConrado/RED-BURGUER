@@ -13,10 +13,11 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: poppins, sans-serif;
 }
 header{
     text-align: center;
-    background-image: url(imagens/bg.png);
+    background-image: url(../imagens/bg.png);
     background-position: center center;
     background-size: cover;
     padding: 45px;
@@ -29,32 +30,61 @@ header{
         cursor: default;
     }
 }
+
 nav{
-    margin-top: 5px;
-    
-    
-    & button{
-        background-color: transparent;
-        color: white;
-        
-        border:1px solid rgba(255, 255, 255, 0.575);
-        border-radius: 30px;
-
-        font-family: poppins, sans-serif;
-        
-        padding: 5px 10px;
-        margin-right: 5px ;
-        
-        cursor: pointer;
-        
-        transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    & a{
+        text-decoration: none;
     }
+    & address{
+        display: flex;
+        margin: 0px auto 10px auto;
+        width: 350px;
+        color: white;
+    }
+}
+.horas{
+    width: 250px;
+    margin: auto;
 
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+
+    & a{
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
-button:hover{
-    border: 1px solid white;
-    padding: 6px 11px;
+
+.horarios{
+    display: none;
+    z-index: 9999;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+     
+    & ul{
+        text-align: justify;
+        width: 100%;
+        list-style-type: none;
+    }
+    & li{
+        display: flex;
+        text-align: end;
+
+        & p{
+            margin-left: 20px;
+        }
+    }
 }
+
 
 /* -------------Main------------- */
 

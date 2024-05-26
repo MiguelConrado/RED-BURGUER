@@ -1,6 +1,40 @@
+var horas = document.getElementById('ihoras');
+var linkAberto = document.getElementById('link-aberto');
+
+var now = new Date();
+var dias = now.getDay();
+var hours = now.getHours();
+
+if ((dias == 2) || (hours < 19 || hours > 23)) {
+    horas.style.backgroundColor = 'red'; 
+    linkAberto.innerText = 'Fechado para pedidos'
+} else {
+    horas.style.backgroundColor = 'green';
+}
+
+
+var horarios = document.getElementById('ihorarios')
+
+function abrirHorario(){
+    if(horarios.style.display = 'none'){
+        horarios.style.display = 'block'
+    }else{
+        horarios.style.display = 'none'
+    }
+}
+horas.addEventListener('click', abrirHorario)
+
+
+var figuras = document.getElementById('figuras')
+
+function icones(){
+    figuras.innerText= 'home_pin'
+}
+
+figuras.addEventListener('mouseenter', icones)
+
+
 var itens = document.getElementsByClassName('hamb-box')
-
-
 let total = document.getElementById('total')
 let num = []
 
